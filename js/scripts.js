@@ -1,4 +1,4 @@
-var Numerals = ["M","CM","D","CD", "C", "LC", "L", "XL", "X", "IX", "V","IV", "I"];
+var Numerals = ["M","CM","D","CD", "C", "XC", "L", "XL", "X", "IX", "V","IV", "I"];
 var Numbers = [1000,900,500,400,100,90,50,40,10,9,5,4,1];
 
 var makeRomanNumeral = function(input) {
@@ -9,6 +9,7 @@ var makeRomanNumeral = function(input) {
       if (input >= currentNumb) {
         output = output + Numerals[i];
         input = input - currentNumb;
+        break;
       }
     }
     // if (input >= 1000) {
@@ -59,7 +60,12 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     var userinput = parseInt($("#user-input").val());
-    var output = makeRomanNumeral(userinput);
-    $("#output").text(output);
+
+    if (userinput < 1 || userinput >= 4000) {
+      $("#output").text("Please enter a number greater than 0 and less than 4000");
+    } else {
+      var output = makeRomanNumeral(userinput);
+      $("#output").text(output);
+    }
   });
 });
