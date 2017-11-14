@@ -1,0 +1,22 @@
+{
+  "name": "roman",
+  "description": "converts an integer into roman numerals",
+  "main": "index.js",
+  "authors": [
+    "Joseph Tomlinson and Valia Dempsey"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
