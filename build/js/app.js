@@ -9,7 +9,6 @@ RomanNumeral.prototype.solve = function(input) {
   if (input < 1 || input >= 4000) {
     return false;
   }
-
   var output = "";
   while (input > 0) {
     for ( var i=0; i < 13; i++){
