@@ -3,7 +3,7 @@ function RomanNumeral() {
   this.numbers = [1000,900,500,400,100,90,50,40,10,9,5,4,1];
 }
 
-RomanNumeral.prototype.solve = function () {
+RomanNumeral.prototype.solve = function(input) {
   var output = "";
   while (input > 0) {
     for ( var i=0; i < 13; i++){

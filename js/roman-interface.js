@@ -9,7 +9,7 @@ $(document).ready(function() {
       $("#output").text("Please enter a number greater than 0 and less than 4000");
     } else {
       var solver = new RomanNumeral();
-      var output = solver.Solve(userinput);
+      var output = solver.solve(userinput);
       $("#output").text(output);
     }
   });
