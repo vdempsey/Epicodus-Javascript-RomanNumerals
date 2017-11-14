@@ -1,0 +1,24 @@
+{
+  "name": "roman",
+  "version": "1.0.0",
+  "description": "converts an integer into roman numerals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/jtomlinson-epicodus/intro/epicodus-roman-numerals.git"
+  },
+  "author": "Joseph Tomlinson and Valia Dempsey",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
