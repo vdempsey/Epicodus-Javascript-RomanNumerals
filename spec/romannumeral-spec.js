@@ -7,9 +7,16 @@ beforeEach(function() {
 });
 
 describe("RomanNumeral", function() {
+
+  it("should round a decimal number to the nearest whole number", function(){
+    var output = "";
+    output = converter.solve(4.3);
+    expect(output).toEqual("IV");
+  });
+
   it("should convert a number into a roman numeral", function(){
     var output = "";
-    var output = converter.solve(100);
+    output = converter.solve(100);
     expect(output).toEqual("C");
   });
 

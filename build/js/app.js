@@ -5,7 +5,7 @@ function RomanNumeral() {
 }
 
 RomanNumeral.prototype.solve = function(input) {
-
+  input = Math.round(input);
   if (input < 1 || input >= 4000) {
     return false;
   }
